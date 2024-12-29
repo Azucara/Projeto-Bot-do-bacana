@@ -11,6 +11,6 @@ COPY bacana.py ./
 
 RUN pip install -r requirements.txt
 
-COPY example.env .env
+COPY .env ./
 
 CMD ["python", "main.py"]
