@@ -11,6 +11,7 @@ COPY bacana.py ./
 
 RUN pip install -r requirements.txt
 
-COPY .env ./
+# para rodar no Render não precisa copiar o .env
+# COPY .env ./
 
 CMD ["python", "main.py"]
